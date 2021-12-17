@@ -1,0 +1,4 @@
+INSERT INTO personas(nombre, apellido, estatura, fecha_nacimiento, sueldo, email, status) VALUES('Luis', 'Guisado', 1.64, NOW(), 2500.00, 'lguisadom@gmail.com', 1)
+INSERT INTO personas(nombre, apellido, estatura, fecha_nacimiento, sueldo, email, status) VALUES('Lourdes', 'Rivera', 1.52, NOW(), 1800.00, 'lourdes@gmail.com', 0)
+INSERT INTO personas(nombre, apellido, estatura, fecha_nacimiento, sueldo, email, status) VALUES('Jorge', 'Guisado', 1.69, NOW(), 3500.50, 'jorge@gmail.com', 1)
+INSERT INTO personas(nombre, apellido, estatura, fecha_nacimiento, sueldo, email, status) VALUES('Luis', 'Guerrero', 1.79, NOW(), 8500.50, 'theluigy@gmail.com', 0)

@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "65cf019e-7995-4964-8a22-55511dbd2caa",
+		"name": "Prueba Microservicio Personas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Búsquedas",
+			"item": [
+				{
+					"name": "BuscarPorNombre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/porNombre/Lourdes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"porNombre",
+								"Lourdes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PorListaDeNombres",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/porNombres?names=Jorge,Lourdes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"porNombres"
+							],
+							"query": [
+								{
+									"key": "names",
+									"value": "Jorge,Lourdes"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PorListaDeApellidos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/porApellidos?lastnames=Guisado",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"porApellidos"
+							],
+							"query": [
+								{
+									"key": "lastnames",
+									"value": "Guisado"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PorApellidoStatus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/persona/Rivera/0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"persona",
+								"Rivera",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PorStatusNombre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/personaStatusName/0/Luis",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"personaStatusName",
+								"0",
+								"Luis"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ver",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/ver/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"ver",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
